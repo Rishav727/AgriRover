@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriRover - Intelligent Farming Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">🚜 AgriRover</a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#control-panel">Control Panel</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>The Future of Farming is automated</h1>
+                <p>Intelligent, precise, nature friendly and sustainable sprinkling management.</p>
+                <a href="#control-panel" class="cta-button">Launch Control Panel</a>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section id="technology" class="tech-section">
+            <div class="container">
+                <h2>How Our system Works</h2>
+                <p class="section-subtitle">A closed-loop system for automated crop health analysis and treatment
+                    through precise pesticide sprinkling.</p>
+                <div class="timeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-camera-retro"></i></div>
+                        <div class="timeline-content">
+                            <h3>1. Data Capture</h3>
+                            <p>The AgriRover navigates fields autonomously, using its 32 high-resolution cameras to
+                                capture detailed footage of every plant from multiple angles.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-brain"></i></div>
+                        <div class="timeline-content">
+                            <h3>2. ML Analysis</h3>
+                            <p>Footage is instantly sent to our cloud API where a proprietary Machine Learning model
+                                analyzes images for signs of disease, pests, and nutrient deficiencies.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-prescription-bottle-alt"></i></div>
+                        <div class="timeline-content">
+                            <h3>3. Diagnosis & Solution</h3>
+                            <p>The AI determines the precise infection level and recommends a targeted solution,
+                                identifying the exact type and amount of pesticide needed.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fas fa-satellite-dish"></i></div>
+                        <div class="timeline-content">
+                            <h3>4. Action & Reporting</h3>
+                            <p>Key images are stored in a database for your records. If treatment is needed, a signal is
+                                sent back to the rover to sprinkle the precise dosage on the affected plant before
+                                moving on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="h">This process continues in cyclic order....</h4>
+        </section>
+
+        <!-- Control Panel Section -->
+        <section id="control-panel" class="control-panel-section">
+            <div class="container">
+                <h2>Rover Control Interface</h2>
+                <div class="panel-grid">
+                    <!-- Left Side: Screens -->
+                    <div class="panel-screens">
+                        <div class="screen main-screen">
+                            <img src="https://placehold.co/800x450/222/FFF?text=Rover+FPV+Feed"
+                                alt="Rover's first-person view camera feed">
+                            <span class="live-indicator">LIVE FPV</span>
+                        </div>
+                        <div class="screen secondary-screen">
+                            <img src="https://placehold.co/400x225/222/FFF?text=Plant+Analysis"
+                                alt="Close-up of a plant for analysis">
+                            <span class="live-indicator">ANALYSIS CAM</span>
+                        </div>
+                    </div>
+                    <!-- Right Side: Controls -->
+                    <div class="panel-controls">
+                        <h3>Manual Override</h3>
+                        <div class="d-pad">
+                            <button class="d-pad-btn up"><i class="fas fa-arrow-up"></i></button>
+                            <button class="d-pad-btn left"><i class="fas fa-arrow-left"></i></button>
+                            <button class="d-pad-btn center"></button>
+                            <button class="d-pad-btn right"><i class="fas fa-arrow-right"></i></button>
+                            <button class="d-pad-btn down"><i class="fas fa-arrow-down"></i></button>
+                        </div>
+                        <!-- This is the updated HTML block to copy and paste -->
+                        <div class="status-bars">
+                            <div class="status-bar">
+                                <label><i class="fas fa-signal"></i> SIGNAL</label>
+                                <div class="bar"><span style="width: 92%;"></span></div>
+                            </div>
+                            <div class="status-bar">
+                                <label><i class="fas fa-battery-three-quarters"></i> BATTERY</label>
+                                <div class="bar"><span style="width: 78%;"></span></div>
+                            </div>
+                            <div class="status-bar">
+                                <label><i class="fas fa-flask"></i> PESTICIDE TANK</label>
+                                <div class="bar"><span style="width: 61%;"></span></div>
+                            </div>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="action-btn analyze"><i class="fas fa-crosshairs"></i> ANALYZE</button>
+                            <button class="action-btn sprinkle"><i class="fas fa-spray-can"></i> SPRINKLE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <h2>Field Case Studies</h2>
+        <div class="gallery-grid">
+            <!-- Case Study 1 -->
+            <div class="gallery-item">
+                <img src="https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_lateblight_Tom_lesion3_min_bdba32e23e.webp&w=1920&q=75" alt="Image of tomato leaf with blight">
+                <div class="gallery-text">
+                    <h3>Late Blight</h3>
+                    <p class="description">Fungal infection causing circular lesions with a "bulls-eye" pattern. If left untreated, it leads to significant yield loss.</p>
+                    <p class="solution"><strong>Solution:</strong> Targeted application of 0.5ml Chlorothalonil fungicide directly on affected foliage.</p>
+                </div>
+            </div>
+            <!-- Case Study 2 -->
+            <div class="gallery-item">
+                <img src="https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_aphids2_3ab7a9a1-016d-422b-b5b0-69c5c23ebae8.webp&w=1920&q=75" alt="Image of corn stalk with aphids">
+                <div class="gallery-text">
+                    <h3>Corn Leaf Aphids</h3>
+                    <p class="description">Small insects found in dense colonies, sucking sap from the plant, which can hinder growth and vector viruses.</p>
+                    <p class="solution"><strong>Solution:</strong> Precision sprinkle of insecticidal soap. Rover marked area for follow-up inspection.</p>
+                </div>
+            </div>
+            <!-- Case Study 3 -->
+            <div class="gallery-item">
+                <img src="https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_powdery-mildew-main_2_0e4374d6-894e-4c11-8cd5-18aae1feb2a6.webp&w=1080&q=100" alt="Image of squash leaf with powdery mildew">
+                <div class="gallery-text">
+                    <h3>Powdery Mildew</h3>
+                    <p class="description">A common fungal disease that appears as white powdery spots on leaves and stems, inhibiting photosynthesis.</p>
+                    <p class="solution"><strong>Solution:</strong> Rover administered a potassium bicarbonate solution, an effective organic fungicide.</p>
+                </div>
+            </div>
+             <!-- Case Study 4 -->
+            <div class="gallery-item">
+                <img src="https://myplantin.com/_next/image?url=https%3A%2F%2Fstrapi.myplantin.com%2Flarge_nitrogen_deficiency_hero_min_1d1466c01e.webp&w=1920&q=75" alt="Image of a plant with yellowing leaves showing nitrogen deficiency">
+                <div class="gallery-text">
+                    <h3>Nitrogen Deficiency</h3>
+                    <p class="description">Identified by uniform yellowing of older, lower leaves. Stunts plant growth and drastically reduces crop yield.</p>
+                    <p class="solution"><strong>Solution:</strong> Rover flagged the 5x5m zone. Recommended a follow-up with nitrogen-rich fertilizer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About AgriRover</h2>
+                <p>We are a team of engineers,dedicated to solving farming challenges through robotics and AI/ML. Our
+                    mission is to make farming more efficient, sustainable, and profitable for growers everywhere. Also
+                    less wastage of pesticide and no harm to healthy crops and soil.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 AgriRover. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
